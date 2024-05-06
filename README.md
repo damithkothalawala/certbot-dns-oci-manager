@@ -1,5 +1,7 @@
 # Certbot DNS OCI Docker Image
 
+![Build Status](https://github.com/damithkothalawala/certbot-dns-oci-manager/actions/workflows/docker-image.yml/badge.svg)
+
 This Dockerfile sets up a Docker image based on Ubuntu 24.04 with Certbot and the Certbot DNS OCI plugin installed, ready for automated certificate management on Oracle Cloud Infrastructure (OCI) using Certbot.
 
 ## What to expect
