@@ -10,20 +10,9 @@ RUN apt-get update && \
     python3 \
     python3-venv \
     git \
-#    build-essential \
-#    libfuse-dev \
-#    libcurl4-openssl-dev \
-#    libxml2-dev \
-#    automake \
-#    libtool \
-#    pkg-config \
     wget \
     openssl \
     fuse \
-#    libssl-dev \
-#    libcrypto++-dev \
-#    libxml2-dev \
-#    libcurl4-openssl-dev \
     s3fs
 
 # Create and activate a virtual environment
