@@ -1,28 +1,29 @@
 # Use Ubuntu 24.04 as base image
-#(C) Damith Rushika Kothalawala 2024 May 6th
-
+# (C) Damith Rushika Kothalawala 2024 May 6th
+# Use Ubuntu 24.04 as base image
 FROM ubuntu:24.04
 
 # Install necessary packages
 RUN apt-get update && \
+    apt-get upgrade -y && \
     apt-get install -y \
     python3 \
     python3-venv \
     git \
-    build-essential \
-    libfuse-dev \
-    libcurl4-openssl-dev \
-    libxml2-dev \
-    automake \
-    libtool \
-    pkg-config \
+#    build-essential \
+#    libfuse-dev \
+#    libcurl4-openssl-dev \
+#    libxml2-dev \
+#    automake \
+#    libtool \
+#    pkg-config \
     wget \
     openssl \
     fuse \
-    libssl-dev \
-    libcrypto++-dev \
-    libxml2-dev \
-    libcurl4-openssl-dev \
+#    libssl-dev \
+#    libcrypto++-dev \
+#    libxml2-dev \
+#    libcurl4-openssl-dev \
     s3fs
 
 # Create and activate a virtual environment
@@ -36,6 +37,7 @@ RUN git clone https://github.com/damithkothalawala/certbot-dns-oci.git -b featur
 
 # Install certbot within the virtual environment
 RUN /venv/bin/pip install certbot
+
 
 # Run mount command using environment variables
 CMD /bin/sh -c 'echo "$S3_ACCESS_KEY:$S3_SECRET_KEY" > /etc/passwd-s3fs && \
