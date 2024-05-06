@@ -88,7 +88,7 @@ We welcome contributions in the form of bug reports, feature requests, code impr
 4. Push to the branch (`git push origin feature/improvement`).
 5. Create a new Pull Request.
 
-Please make sure to follow the [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md).
+Please make sure to follow the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## License
 
