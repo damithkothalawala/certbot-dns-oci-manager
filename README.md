@@ -4,6 +4,9 @@
 
 This Dockerfile sets up a Docker image based on Ubuntu 24.04 with Certbot and the Certbot DNS OCI plugin installed, ready for automated certificate management on Oracle Cloud Infrastructure (OCI) using Certbot.
 
+> **Disclaimer:** It's worth noting that certain security experts advise against storing private keys in object stores, even when encrypted with CSP Keys or Customer Master Keys. Therefore, we highly recommend consulting your security team before implementing this method in a production environment.
+
+
 ## What to expect
 
 1. This will help you to create and renew Certbot certificates centrally not limited to a Kubernates / VM or on a Baremetal Server. And prevent getting API rate-limits from Certbot.
