@@ -1,7 +1,7 @@
 # Use Ubuntu 24.04 as base image
 # (C) Damith Rushika Kothalawala 2024 May 6th
 # Use Ubuntu 24.04 as base image
-FROM ubuntu:24.04 AS BASE
+FROM ubuntu:26.04 AS BASE
 
 # Install necessary packages
 RUN apt-get update && \
